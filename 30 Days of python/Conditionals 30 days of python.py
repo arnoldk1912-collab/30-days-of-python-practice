@@ -101,5 +101,44 @@ elif total_order < 30 and coupon == 'Y':
     print('3% discount')
 else:
     print(f'Your total is {total_order} :')
+    
+# Nested condition version of discount logic
+
+# Note to future me: the nested version below uses the same
+# example as the logical-operator version above, on purpose —
+# it's for comparing the two approaches, not a mistake/duplicate.
+
+total = float(input('Enter your order total :'))
+cu = input('Do you have a Coupon? (Y/N)')
+
+if total >= 30:  # Outer check: does the order qualify for a big discount tier?
+    if cu == 'Y':  # Order qualifies AND has a coupon
+        print('special discount')
+    elif cu == 'N':  # Order qualifies but no coupon
+        print('5% discount')
+elif total < 30:  # Order is under the threshold
+    if cu == 'Y':  # Small order but still has a coupon
+        print('3% discount')
+    else:  # Small order, no coupon — no discount applies
+        print(f'Your total is {total} :')
+# # Personal note: nested conditions took me a while to understand,
+# but learning logical operators (and/or) made them much easier
+# to reason about and write.
+
+# If and Or Logical Operators
+# The or operator returns True if either condition is True.
+# Here, access is granted if the username is 'admin' OR the access level is at least 4.
+# This is useful when you want to allow access if either of two checks passes.
+user = input('Enter your user :')
+access_level = int(input('Enter your access level :'))
+
+if user.lower() == 'admin' or access_level >= 4:
+    print('Access Granted!')
+else:
+    print('Access denied!')
+    
+    
+        
+        
 
  
