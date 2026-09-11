@@ -76,7 +76,7 @@ else:
         print('Ticket price: $8')
         
 order_total = float(input('Enter order total: '))
-member = input('Are they a member? (Yes/no): ')
+member = input('Are they a member? (Y/N): ')
 
 if order_total < 20:
     print('No discount')
@@ -85,6 +85,21 @@ else:
         print('10% discount applide')
     else: 
         print('5% discount applide')
-    
+        
+# We can avoid writing nested condition by using logical operator and.
+
+# If Condition and Logical Operators
+
+total_order = float(input('Enter your order total :'))
+coupon = input('Do you have a Coupon? (Y/N)')       
+
+if total_order >= 30 and coupon == 'Y':
+    print('Special discount')
+elif total_order >= 30 and coupon == 'N':
+    print('5% discount')
+elif total_order < 30 and coupon == 'Y':
+    print('3% discount')
+else:
+    print(f'Your total is {total_order} :')
 
  
