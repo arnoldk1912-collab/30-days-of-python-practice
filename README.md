@@ -110,7 +110,7 @@ Use this tracker to record each day's learning goal and update the status as you
 | 8 | Dictionaries | ✅ Completed | Key-value pairs and methods |
 | 9 | Lists + dictionaries practice | ✅ Completed | Combining collection concepts |
 | 10 | Conditionals |✅ Completed  | Started if/elif/else| If/else and logic checks |
-| 11 | Loops | ⏳ Planned | For and while loops |
+| 11 | Loops | 🔄 In Progress | For and while loops |
 | 12 | Loop challenges | ⏳ Planned | Practice with repetitions |
 | 13 | Functions | ⏳ Planned | Reusable blocks of code |
 | 14 | Function exercises | ⏳ Planned | Practice with arguments and return values |
