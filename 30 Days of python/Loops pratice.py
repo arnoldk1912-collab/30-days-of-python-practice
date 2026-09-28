@@ -101,13 +101,46 @@ while rocket > 0:
     rocket = rocket - 1
 print("Blast off!")
 
+# While loop break pattern skeleton
 numbers = 0
 while numbers < 5:
     print(numbers)
     numbers = numbers + 1
     if numbers == 3:
         break
-    
+ 
+ # 1 Break pattern
+Battery = 80
+while Battery < 100:
+    print('Charging', Battery, '%')
+    if Battery == 90:
+        print('Charging limit is set to 90%')
+        break
+    Battery = Battery + 1
+print('Chrging completed')   
+
+# 2 while True + break pattern
+charge = 70
+while True:
+    print("Charging", charge, '%')
+    if charge == 90:
+        print("Charging limit is set to 90!")
+        break
+    charge = charge + 1
+print('Charging completed')
+
+# 3 break + else pattern
+
+Charge = 70
+while True:
+    print('Charging', Charge, '%')
+    if Charge == 90:
+        print('stoped early at your limit')
+        break
+    Charge = Charge + 1
+else:
+    print('Battery is fully charged!!!')
+
     
 guest_list = ['Alex', 'Ajax', 'Ben', 'Chris', 'Mia', 'Sam']
 looking_for = 'Chris'
