@@ -78,9 +78,45 @@ else:
 # Now the else: block fires — because the loop ended by the condition going false (nobody hit break), so Python runs it:
 # print(number) → number is currently 5 → prints 5
 
+#  The Anatomy of a while Loop
+# To understand it deeply, you need to see that every while loop has **three secret
+# parts** working together. If you miss one, it breaks.
+    
+# 1.  The Starting Point: Where do we begin?
+# 2.  The Condition (The Guard): The rule that keeps the loop running.
+# 3.  The Change (The Update): Something that changes the starting point so the 
+# condition can eventually become False.
+
+battery = 80 # 1. starting point
+while battery < 100: # 2. the condition (Guard asks: "is 80 < 100?")
+    print('charging....', battery, '%')
+    battery = battery + 1 # 3. the change (we must add to the battery!)
+print('Battery is full') 
+# this continues untill the battery is 100.
+
+# tiny rocket example:
+rocket = 5
+while rocket > 0:
+    print('Rocket is ready to Launch in:', rocket)
+    rocket = rocket - 1
+print("Blast off!")
+
 numbers = 0
 while numbers < 5:
     print(numbers)
     numbers = numbers + 1
     if numbers == 3:
         break
+    
+    
+guest_list = ['Alex', 'Ajax', 'Ben', 'Chris', 'Mia', 'Sam']
+looking_for = 'Chris'
+index = 0
+while index < len(guest_list):
+    name = guest_list[index]
+    print('Checking:', name)
+    if name == looking_for:
+        print('Found', looking_for, '!stopping the search.')
+        break
+    index = index + 1
+    
