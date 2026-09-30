@@ -101,6 +101,9 @@ while rocket > 0:
     rocket = rocket - 1
 print("Blast off!")
 
+# ----------break training---------- #
+
+# break: The 'Exit' button
 # While loop break pattern skeleton
 numbers = 0
 while numbers < 5:
@@ -140,6 +143,13 @@ while True:
     Charge = Charge + 1
 else:
     print('Battery is fully charged!!!')
+   
+x = 10
+while x > 5:
+    print(x)
+    x = x - 2
+    if x == 6:
+        x = x + 1
 
     
 guest_list = ['Alex', 'Ajax', 'Ben', 'Chris', 'Mia', 'Sam']
@@ -152,4 +162,46 @@ while index < len(guest_list):
         print('Found', looking_for, '!stopping the search.')
         break
     index = index + 1
+
+# small task to check my muscle memory   
+y = 10
+while y > 1:
+    if y == 5:
+        break
+    print("Justprint Y!", y)
+    y = y -1
     
+names = ['Vi', 'Jinx', 'Power', 'Denji', 'Reze']
+
+for Name in names:
+    print('i am currently looking for:', Name)
+print(' empty')
+    
+# ---------- continue training ---------- #
+
+# continue: the "Skip" button.
+    
+# When a break hits, the loop stops entirely (it's over).
+# When a continue hits, the loop just says, "I'm done with this specific turn, 
+# let's jump back to the top and start the next turn immediately."
+    
+#    The Analogy: Cleaning your room
+# Imagine you are going through a pile of items in your room to clean them:
+#  1. You see a book -> Clean it.
+#  2. You see a toy -> Clean it.
+#  3. You see dusty socks -> continue (skip these, you don't want to touch them right now, move to the next item).
+#  4. You see a table -> Clean it.
+    
+#   If you had used break on the socks, you would have stopped cleaning the entire room and walked out!
+
+# While loop continue pattern skeleton
+
+print("\n--- CONTINUE EXAMPLE ---")
+z = 0
+while z < 5:
+    z = z + 1
+    if z == 3:
+        continue
+    print(z)
+        
+        
