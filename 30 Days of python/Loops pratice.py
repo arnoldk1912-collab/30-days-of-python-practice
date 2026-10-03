@@ -204,4 +204,10 @@ while z < 5:
         continue
     print(z)
         
+order_number = 0
+while order_number < 10:
+    order_number = order_number + 1
+    if order_number == 3 or order_number == 7 or order_number == 9:
+        continue
+    print('Order ready', order_number)
         
